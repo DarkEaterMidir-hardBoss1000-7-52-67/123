@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в аккаунт | Читай-город</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/enter copy.css">
+    <link rel="stylesheet" href="./css/enter.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Тот же header, что и на других страницах -->
+            <div class="top">
+                <div class="up">
+                    <div class="first-line">
+                        <img src="./img/bow.png" width="15px" height="15px"/>
+                        <a href="#">Россия, Москва</a>
+                        <a href="#">Магазины</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Партнёрская программа</a>
+                    </div>
+                    <div class="two-line">
+                        <a href="#">Вакансии</a>
+                        <span>8 (495) 424-84-44</span>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="up2">
+                    <div class="line1">
+                        <a href="./Home.html"><img src="img/LOGO.jpg" alt="Логотип" class="corect" height="60"></a>
+                        <div class="chita">
+                            <h1>КНИГИ</h1>
+                            <h1>ВЕЗДЕ</h1>
+                        </div>
+                        <a href="./catalog.html"><button class="bt1">Каталог</button></a>
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Что будем искать?">
+                            <button type="submit" class="search-btn">
+                                <img src="./img/lupa.png"/>
+                            </button>
+                        </form>
+                        <div class="nav-buttons">
+                            <a href="./Enter.html"><button class="nav-button">
+                                <img src="./img/Профиль.png" alt="Профиль"/>  
+                                <span>Войти</span>
+                            </button></a>
+                            <button class="nav-button">
+                                <img src="./img/Заказы.png" alt="Заказы"/> 
+                                <span>Заказы</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Закладки.png" alt="Закладки"/>
+                                <span>Закладки</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Корзина.png" alt="Корзина"/> 
+                                <span>Корзина</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <a href="#">Акции</a>
+                        <a href="#">Распродажа</a>
+                        <a href="#">Комиксы</a>
+                        <a href="#">Настольные игры</a>
+                        <a href="#">Что ещё почитать?</a>
+                        <a href="#">Читай-журнал</a>
+                        <a href="#">Подарочные сертификаты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент страницы входа -->
+        <main class="login-container">
+            <div class="login-wrapper">
+                <div class="login-header">
+                    <h1>Вход в аккаунт</h1>
+                    <p>Ещё нет аккаунта? <a href="./Registration.html">Зарегистрироваться</a></p>
+                </div>
+                
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                            <button type="button" class="toggle-password">
+                                <i class='bx bx-hide'></i>
+                            </button>
+                        </div>
+                        <a href="/forgot-password.html" class="forgot-password">Забыли пароль?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Войти</button>
+                    
+                    <div class="social-login">
+                        <p>Или войдите через:</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-btn vk">
+                                <i class='bx bxl-vk'></i>
+                                ВКонтакте
+                            </button>
+                            <button type="button" class="social-btn google">
+                                <i class='bx bxl-google'></i>
+                                Google
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="login-benefits">
+                <h2>Преимущества аккаунта</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <i class='bx bx-history'></i>
+                        <span>История заказов и быстрый повторный заказ</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-bookmark'></i>
+                        <span>Синхронизация закладок между устройствами</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-coin-stack'></i>
+                        <span>Накопление бонусов и участие в акциях</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-bell'></i>
+                        <span>Персональные рекомендации и уведомления</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- Подвал (такой же как на других страницах) -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Книжный интернет-магазин "КНИГИ-ВЕЗДЕ"</h3>
+                        <a href="#">«КНИГИ-ВЕЗДЕ» – сеть книжных магазинов, успешно работающих в Москве и других регионах России.</a>
+                        <a href="#">А ещё это – крупный интернет-магазин книг. В нём вы можете заказывать книги в любое время 24 часа в сутки.</a>
+                        <a href="#">На информационном ресурсе применяются рекомендательные технологии.</a>
+                        <div class="social-links">
+                            <a href="#"><img src="./img/WK.png" alt=""></a></a>
+                            <a href="#"><img src="./img/TG.png" alt=""></a>
+                            <a href="#"><img src="./img/YouTube.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В наших магазинах</h3>
+                        <a href="#">Адреса магазинов</a>
+                        <a href="#">Услуги</a>
+                        <a href="#">Наши партнёры</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Для бизнеса</a>
+                        <a href="#">Хотите у нас работать?</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В интернет-магазине</h3>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Вопросы и ответы</a>
+                        <a href="#">Обратная связь</a>
+                        <a href="#">Акции</a>
+                        <a href="#">Книжный дозор</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <a href="#">8 (495) 424-84-44</a>
+                        <a href="#">info@cnigi-vezde.ru</a>
+                        <a href="#">Россия, Москва</a>
+                        <h3 style="margin-top: 20px;">Мы принимаем</h3>
+                        <div class="payment-methods">
+                            <img src="./img/visa.png" alt="">
+                            <img src="./img/mastercard.png" alt="">
+                            <img src="./img/paypal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2025 КНИГИ-ВЕЗДЕ. Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Скрипт для переключения видимости пароля
+        document.querySelector('.toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('bx-hide');
+                icon.classList.add('bx-show');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('bx-show');
+                icon.classList.add('bx-hide');
+            }
+        });
+    </script>
+</body>
+</html>

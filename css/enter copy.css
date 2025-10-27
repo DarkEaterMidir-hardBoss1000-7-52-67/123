@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(https://avatars.mds.yandex.net/i?id=95673fb528eaff460a49d34c183f9343_l-5233432-images-thumbs&n=13);
+    background-image: no-repeat;
+    background-size:cover ;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Шапка */
+.top {
+    background-color: #067eff;
+    color: white;
+    font-size: 12px;
+    border: #333;
+    border-radius: 10px;
+}
+
+header{
+    border-radius: 10%;
+}
+
+.corect{
+    border-radius: 40%;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #0566b5;
+    height: 30px;
+    align-items: center;
+    border: #333;
+    border-radius: 10px;
+}
+
+.first-line, .two-line {
+    display: flex;
+    gap: 15px;
+}
+
+.first-line a, .two-line a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Основное меню */
+.up2 {
+    padding: 15px;
+    border: #333;
+    border-radius: 10px;
+}
+
+.line1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.chita {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.chita h1 {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+.bt1 {
+    background-color: #0566b5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+}
+
+.search-form {
+    position: relative;
+    width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background-color: #00499c;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    background-color: #003d82;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    gap: 3px;
+    min-width: 50px;
+}
+
+.nav-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.line2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+/*Контент сайта*/
+
+.registration-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px 0% 0% 30%;
+
+}
+
+.registration-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registration-header h2 {
+    color: #333;
+    margin: 0;
+    font-size: 28px;
+}
+
+.registration-header p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #4a6cf7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+.form-group.error .form-control {
+    border-color: #e74c3c;
+}
+
+.form-group.success .form-control {
+    border-color: #2ecc71;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3a5bd9;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-link a {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+    color: #777;
+}
+
+/* Подвал */
+footer {
+    background-color: #dfe6f4;
+    padding: 40px 0;
+    margin-top: 50px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 18.7%;
+    border: #dfe6f4;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 20px 35% 0% 0%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-column a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #067eff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #666;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #067eff;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.payment-methods i {
+    font-size: 24px;
+    color: #666;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+
+@media (max-width: 576px) {
+    .registration-container {
+        padding: 30px 20px;
+    }
+}

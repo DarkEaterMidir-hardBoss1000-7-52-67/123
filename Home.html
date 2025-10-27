@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>«КНИГИ-ВЕЗДЕ»</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/home.css">
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <div class="up">
+                    <div class="first-line">
+                        <img src="./img/bow.png" width="15px" height="15px"/>
+                        <a href="#">Россия, Москва</a>
+                        <a href="#">Магазины</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Партнёрская программа</a>
+                    </div>
+                    <div class="two-line">
+                        <a href="#">Вакансии</a>
+                        <span>8 (495) 424-84-44</span>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="up2">
+                    <div class="line1">
+                        <a href="./Home.html"><img src="./img/LOGO.jpg" alt="Логотип" class="corect" height="60"></a>
+                        <div class="chita">
+                            <h1>КНИГИ</h1>
+                            <h1>ВЕЗДЕ</h1>
+                        </div>
+                        <a href="./catalog.html"><button class="bt1">Каталог</button></a>
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Что будем искать?">
+                            <button type="submit" class="search-btn">
+                                <img src="./img/lupa.png"/>
+                            </button>
+                        </form>
+                        <div class="nav-buttons">
+                            <a href="./Enter.html"><button class="nav-button">
+                                <img src="./img/Профиль.png" alt="Профиль"/>  
+                                <span>Войти</span>
+                            </button></a>
+                            <button class="nav-button">
+                                <img src="./img/Заказы.png" alt="Заказы"/> 
+                                <span>Заказы</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Закладки.png" alt="Закладки"/>
+                                <span>Закладки</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Корзина.png" alt="Корзина"/> 
+                                <span>Корзина</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <a href="#">Акции</a>
+                        <a href="#">Распродажа</a>
+                        <a href="#">Комиксы</a>
+                        <a href="#">Настольные игры</a>
+                        <a href="#">Что ещё почитать?</a>
+                        <a href="#">Читай-журнал</a>
+                        <a href="#">Подарочные сертификаты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Слайдер -->
+        <div class="slider-container">
+            <div class="main-slide">
+                <div class="slide-image"></div>
+                <div class="slider-arrows">
+                    <div class="slider-arrow left"><img src="./img/стрелка влево.png" alt=""></div>
+                    <div class="slider-arrow right"><img src="./img/стрелка вправо.png" alt=""></div>
+                </div>
+            </div>
+            <div class="slide-nav">
+                <div class="slide-nav-item">
+                    <img src="./img/Скотный двор.png" alt="Слайд 1">
+                </div>
+                <div class="slide-nav-item">
+                    <img src="./img/Лавкрафи.png" alt="Слайд 2">
+                </div>
+                <div class="slide-nav-item">
+                    <img src="./img/Game of Trones.png" alt="Слайд 3">
+                </div>
+                <div class="slide-nav-item">
+                    <img src="./img/LoTR.png" alt="Слайд 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Баннеры -->
+        <div class="banners">
+            <div class="banner">
+                <img src="./img/иконка1.png" alt="Иконка">
+                <div class="banner-text">
+                    <h3>10 главных новинок апреля</h3>
+                    <p>Ли Бардуго и Лия Арден возвращаются</p>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./img/иконка2.png" alt="Иконка">
+                <div class="banner-text">
+                    <h3>Эксклюзивно в "КНИГИ-ВЕЗДЕ"</h3>
+                    <p>Невозможно пропустить!</p>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./img/Иконка3.png" alt="Иконка">
+                <div class="banner-text">
+                    <h3>Специальные предложения</h3>
+                    <p>Скидки до 50%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточки товаров -->
+        <div class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">НОВИНКИ ЛИТЕРАТУРЫ</h2>
+                <a href="#" class="view-all">Смотреть всё</a>
+            </div>
+            <div class="products-grid">
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Ночной гость.png" alt="Ночной гость">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">817 ₽</span>
+                        <span class="old-price">1 061 ₽</span>
+                        <span class="discount">22%</span>
+                    </div>
+                    <h4 class="product-title">Ночной гость</h4>
+                    <p class="product-author">Хизер Гуденкауф</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="rating-count">(2)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Гарри Поттер.png" alt="Гарри Поттер">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">599 ₽</span>
+                        <span class="old-price">899 ₽</span>
+                        <span class="discount">33%</span>
+                    </div>
+                    <h4 class="product-title">Гарри Поттер и Дары Смерти</h4>
+                    <p class="product-author">Дж. К. Роулинг</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <span class="rating-count">(124)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/1984.png" alt="1984">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">459 ₽</span>
+                        <span class="old-price">659 ₽</span>
+                        <span class="discount">30%</span>
+                    </div>
+                    <h4 class="product-title">1984</h4>
+                    <p class="product-author">Джордж Оруэлл</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <span class="rating-count">(87)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Три товарища.png" alt="Три товарища">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">729 ₽</span>
+                        <span class="old-price">999 ₽</span>
+                        <span class="discount">27%</span>
+                    </div>
+                    <h4 class="product-title">Три товарища</h4>
+                    <p class="product-author">Эрих Мария Ремарк</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="rating-count">(56)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                 <!-- Товар 5 -->
+                 <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/А зори здесь тихие.png" alt="А зори здесь тихие">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">629 ₽</span>
+                        <span class="old-price">899 ₽</span>
+                        <span class="discount">27%</span>
+                    </div>
+                    <h4 class="product-title">А зори здесь тихие</h4>
+                    <p class="product-author">Борис Васильев</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="rating-count">(56)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Второй раздел с товарами -->
+        <div class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">ПОПУЛЯРНЫЕ КНИГИ</h2>
+                <a href="#" class="view-all">Смотреть всё</a>
+            </div>
+            <div class="products-grid">
+                <!-- Товар 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Мастер и маргарита.png" alt="Мастер и Маргарита">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">689 ₽</span>
+                        <span class="old-price">899 ₽</span>
+                        <span class="discount">23%</span>
+                    </div>
+                    <h4 class="product-title">Мастер и Маргарита</h4>
+                    <p class="product-author">Михаил Булгаков</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <span class="rating-count">(203)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Преступление и наказание.png" alt="Преступление и наказание">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">549 ₽</span>
+                    </div>
+                    <h4 class="product-title">Преступление и наказание</h4>
+                    <p class="product-author">Фёдор Достоевский</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <span class="rating-count">(156)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Война и мир.png" alt="Война и мир">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">659 ₽</span>
+                        <span class="old-price">899 ₽</span>
+                        <span class="discount">27%</span>
+                    </div>
+                    <h4 class="product-title">Война и мир</h4>
+                    <p class="product-author">Лев Толстой</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="rating-count">(98)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                
+                <!-- Товар 9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Маленький принц.png" alt="Маленький принц">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">489 ₽</span>
+                        <span class="old-price">699 ₽</span>
+                        <span class="discount">30%</span>
+                    </div>
+                    <h4 class="product-title">Маленький принц</h4>
+                    <p class="product-author">Антуан де Сент-Экзюпери</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <span class="rating-count">(245)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+                <!-- Товар 10 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/Франкенштейн.png" alt="Франкенштейн">
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">489 ₽</span>
+                        <span class="old-price">699 ₽</span>
+                        <span class="discount">30%</span>
+                    </div>
+                    <h4 class="product-title">Франкенштейн</h4>
+                    <p class="product-author">Мэри Шэлли</p>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <span class="rating-count">(245)</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                        <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Книжный интернет-магазин "КНИГИ-ВЕЗДЕ"</h3>
+                    <a href="#">«КНИГИ-ВЕЗДЕ» – сеть книжных магазинов, успешно работающих в Москве и других регионах России.</a>
+                    <a href="#">А ещё это – крупный интернет-магазин книг. В нём вы можете заказывать книги в любое время 24 часа в сутки.</a>
+                    <a href="#">На информационном ресурсе применяются рекомендательные технологии.</a>
+                    <div class="social-links">
+                        <a href="#"><img src="./img/WK.png" alt=""></a></a>
+                        <a href="#"><img src="./img/TG.png" alt=""></a>
+                        <a href="#"><img src="./img/YouTube.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>В наших магазинах</h3>
+                    <a href="#">Адреса магазинов</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Наши партнёры</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Для бизнеса</a>
+                    <a href="#">Хотите у нас работать?</a>
+                </div>
+                <div class="footer-column">
+                    <h3>В интернет-магазине</h3>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Бонусная программа</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Книжный дозор</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <a href="#">8 (495) 424-84-44</a>
+                    <a href="#">info@cnigi-vezde.ru</a>
+                    <a href="#">Россия, Москва</a>
+                    <h3 style="margin-top: 20px;">Мы принимаем</h3>
+                    <div class="payment-methods">
+                        <img src="./img/visa.png" alt="">
+                        <img src="./img/mastercard.png" alt="">
+                        <img src="./img/paypal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 КНИГИ-ВЕЗДЕ. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Скрипт для слайдера
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainSlide = document.querySelector('.main-slide img');
+            const navItems = document.querySelectorAll('.slide-nav-item');
+            const leftArrow = document.querySelector('.slider-arrow.left');
+            const rightArrow = document.querySelector('.slider-arrow.right');
+            
+            let currentSlide = 0;
+            const slides = [
+                '"./img/Скотный двор.png"',
+                '"./img/Лавкрафи.png"',
+                '"./img/Game of Trones.png"',
+                '"./img/LoTR.png"'
+            ];
+            
+            // Инициализация
+            navItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateSlider();
+                });
+            });
+            
+            leftArrow.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlider();
+            });
+            
+            rightArrow.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlider();
+            });
+            
+            function updateSlider() {
+                const slideImage = document.querySelector('.main-slide .slide-image');
+                slideImage.style.backgroundImage = `url(${slides[currentSlide]})`;
+                
+                navItems.forEach((item, index) => {
+                    if (index === currentSlide) {
+                        item.style.opacity = '0.7';
+                        item.style.border = '2px solid #067eff';
+                    } else {
+                        item.style.opacity = '1';
+                        item.style.border = 'none';
+                    }
+                });
+            }
+            
+            // Инициализация первого слайда
+            updateSlider();
+        });
+
+          // Дополнительно: предзагрузка изображений для плавной работы
+    slides.forEach(slide => {
+        const img = new Image();
+        img.src = slide;
+    });
+    </script>
+</body>
+</html>

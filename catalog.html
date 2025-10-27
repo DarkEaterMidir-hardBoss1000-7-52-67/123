@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | КНИГИ-ВЕЗДЕ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/catalog-home.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <div class="up">
+                    <div class="first-line">
+                        <img src="./img/bow.png" width="15px" height="15px"/>
+                        <a href="#">Россия, Москва</a>
+                        <a href="#">Магазины</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Партнёрская программа</a>
+                    </div>
+                    <div class="two-line">
+                        <a href="#">Вакансии</a>
+                        <span>8 (495) 424-84-44</span>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="up2">
+                    <div class="line1">
+                        <a href="./Home.html"><img src="./img/LOGO.jpg" alt="Логотип" class="corect" height="60"></a>
+                        <div class="chita">
+                            <h1>КНИГИ</h1>
+                            <h1>ВЕЗДЕ</h1>
+                        </div>
+                        <a href="./catalog.html"><button class="bt1">Каталог</button></a>
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Что будем искать?">
+                            <button type="submit" class="search-btn">
+                                <img src="./img/lupa.png"/>
+                            </button>
+                        </form>
+                        <div class="nav-buttons">
+                            <a href="./Enter.html"><button class="nav-button">
+                                <img src="./img/Профиль.png" alt="Профиль"/>  
+                                <span>Войти</span>
+                            </button></a>
+                            <button class="nav-button">
+                                <img src="./img/Заказы.png" alt="Заказы"/> 
+                                <span>Заказы</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Закладки.png" alt="Закладки"/>
+                                <span>Закладки</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Корзина.png" alt="Корзина"/> 
+                                <span>Корзина</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <a href="#">Акции</a>
+                        <a href="#">Распродажа</a>
+                        <a href="#">Комиксы</a>
+                        <a href="#">Настольные игры</a>
+                        <a href="#">Что ещё почитать?</a>
+                        <a href="#">Читай-журнал</a>
+                        <a href="#">Подарочные сертификаты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент каталога -->
+        <div class="catalog-container">
+            <div class="sidebar">
+                <h3>Категории</h3>
+                <ul class="categories">
+                    <li><a href="#">Художественная литература</a></li>
+                    <li><a href="#">Детские книги</a></li>
+                    <li><a href="#">Наука и образование</a></li>
+                    <li><a href="#">Бизнес-литература</a></li>
+                    <li><a href="#">Психология</a></li>
+                    <li><a href="#">Детективы</a></li>
+                    <li><a href="#">Фэнтези</a></li>
+                    <li><a href="#">Комиксы и манга</a></li>
+                </ul>
+
+                <h3>Фильтры</h3>
+                <div class="filter-section">
+                    <h4>Цена</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="5000" value="2500" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>0 ₽</span>
+                            <span>5000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Автор</h4>
+                    <input type="text" placeholder="Поиск автора" class="author-search">
+                </div>
+
+                <div class="filter-section">
+                    <h4>Издательство</h4>
+                    <select class="publisher-select">
+                        <option>Все издательства</option>
+                        <option>Эксмо</option>
+                        <option>АСТ</option>
+                        <option>Манн, Иванов и Фербер</option>
+                        <option>Питер</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog-content">
+                <div class="sorting-options">
+                    <span>Сортировка:</span>
+                    <select class="sort-select">
+                        <option>По популярности</option>
+                        <option>По возрастанию цены</option>
+                        <option>По убыванию цены</option>
+                        <option>По новизне</option>
+                        <option>По рейтингу</option>
+                    </select>
+                    <div class="view-options">
+                        <button class="view-btn active"><i class='bx bx-grid'></i></button>
+                        <button class="view-btn"><i class='bx bx-menu'></i></button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Товары будут здесь -->
+                    <!-- Пример товара 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/Ночной гость.png" alt="Ночной гость">
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">817 ₽</span>
+                            <span class="old-price">1 061 ₽</span>
+                            <span class="discount">22%</span>
+                        </div>
+                        <h4 class="product-title">Ночной гость</h4>
+                        <p class="product-author">Хизер Гуденкауф</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <span class="rating-count">(2)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                            <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Пример товара 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/Гарри Поттер.png" alt="Гарри Поттер">
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">599 ₽</span>
+                            <span class="old-price">899 ₽</span>
+                            <span class="discount">33%</span>
+                        </div>
+                        <h4 class="product-title">Гарри Поттер и Дары Смерти</h4>
+                        <p class="product-author">Дж. К. Роулинг</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                            </div>
+                            <span class="rating-count">(124)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="buy-btn" onclick="location.href='./index.html'">Купить</button>
+                            <button class="wishlist-btn"><i class='bx bx-bookmark'></i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <button class="page-btn next"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Книжный интернет-магазин "«Книги-везде»"</h3>
+                        <a href="#">«Книги-везде» – сеть книжных магазинов, успешно работающих в Москве и других регионах России.</a>
+                        <a href="#">А ещё это – крупный интернет-магазин книг. В нём вы можете заказывать книги в любое время 24 часа в сутки.</a>
+                        <a href="#">На информационном ресурсе применяются рекомендательные технологии.</a>
+                        <div class="social-links">
+                            <a href="#"><i class='bx bxl-vk'></i></a>
+                            <a href="#"><i class='bx bxl-telegram'></i></a>
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В наших магазинах</h3>
+                        <a href="#">Адреса магазинов</a>
+                        <a href="#">Услуги</a>
+                        <a href="#">Наши партнёры</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Для бизнеса</a>
+                        <a href="#">Хотите у нас работать?</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В интернет-магазине</h3>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Вопросы и ответы</a>
+                        <a href="#">Обратная связь</a>
+                        <a href="#">Акции</a>
+                        <a href="#">Книжный дозор</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <a href="#">8 (495) 424-84-44</a>
+                        <a href="#">info@cnigi-vezde.ru</a>
+                        <a href="#">Россия, Москва</a>
+                        <h3 style="margin-top: 20px;">Мы принимаем</h3>
+                        <div class="payment-methods">
+                            <i class='bx bxl-visa'></i>
+                            <i class='bx bxl-mastercard'></i>
+                            <i class='bx bxl-paypal'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2025 КНИГИ-ВЕЗДЕ. Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Скрипт для переключения вида каталога
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                if (this.querySelector('i').classList.contains('bx-menu')) {
+                    document.querySelector('.products-grid').classList.add('list-view');
+                } else {
+                    document.querySelector('.products-grid').classList.remove('list-view');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа | КНИГИ-ВЕЗДЕ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/card1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Тот же самый header, что и в каталоге -->
+            <div class="top">
+                <div class="up">
+                    <div class="first-line">
+                        <img src="./img/bow.png" width="15px" height="15px"/>
+                        <a href="#">Россия, Москва</a>
+                        <a href="#">Магазины</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Партнёрская программа</a>
+                    </div>
+                    <div class="two-line">
+                        <a href="#">Вакансии</a>
+                        <span>8 (495) 424-84-44</span>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="up2">
+                    <div class="line1">
+                        <a href="./Home.html"><img src="./img/LOGO.jpg" alt="Логотип" class="corect" height="60"></a>
+                        <div class="chita">
+                            <h1>КНИГИ</h1>
+                            <h1>ВЕЗДЕ</h1>
+                        </div>
+                        <a href="./catalog.html"><button class="bt1">Каталог</button></a>
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Что будем искать?">
+                            <button type="submit" class="search-btn">
+                                <img src="./img/lupa.png">
+                            </button>
+                        </form>
+                        <div class="nav-buttons">
+                            <a href="./Enter.html"><button class="nav-button">
+                                <img src="./img/Профиль.png" alt="Профиль"/>  
+                                <span>Войти</span>
+                            </button></a>
+                            <button class="nav-button">
+                                <img src="./img/Заказы.png" alt="Заказы"/> 
+                                <span>Заказы</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Закладки.png" alt="Закладки"/>
+                                <span>Закладки</span>
+                            </button>
+                            <button class="nav-button">
+                                <img src="./img/Корзина.png" alt="Корзина"/> 
+                                <span>Корзина</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <a href="#">Акции</a>
+                        <a href="#">Распродажа</a>
+                        <a href="#">Комиксы</a>
+                        <a href="#">Настольные игры</a>
+                        <a href="#">Что ещё почитать?</a>
+                        <a href="#">Читай-журнал</a>
+                        <a href="#">Подарочные сертификаты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент страницы покупки -->
+        <div class="product-container">
+            <div class="breadcrumbs">
+                <a href="./Home.html">Главная</a> / 
+                <a href="./catalog.html">Каталог</a> / 
+                <a href="./catalog.html">Художественная литература</a> / 
+                <span>Ночной гость</span>
+            </div>
+
+            <div class="product-main">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="./img/Ночной гость.png" alt="Ночной гость">
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active">
+                            <img src="./img/Ночной гость.png" alt="Обложка">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./img/разворот.png" alt="Страницы">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./img/Задняя сторона.png" alt="Обратная сторона">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>Ночной гость</h1>
+                    <div class="author">Хизер Гуденкауф</div>
+                    
+                    <div class="rating">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="rating-count">2 отзыва</span>
+                        <a href="#reviews" class="add-review">Написать отзыв</a>
+                    </div>
+
+                    <div class="availability">
+                        <i class='bx bx-check-circle'></i>
+                        <span>В наличии</span>
+                        <span class="stock">Более 10 шт.</span>
+                    </div>
+
+                    <div class="prices">
+                        <div class="current-price">817 ₽</div>
+                        <div class="old-price">1 061 ₽</div>
+                        <div class="discount">-22%</div>
+                    </div>
+
+                    <div class="actions">
+                        <div class="quantity">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" value="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="buy-btn">Купить</button>
+                        <button class="wishlist-btn">
+                            <i class='bx bx-bookmark'></i>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <div class="delivery-info">
+                        <div class="delivery-option">
+                            <i class='bx bx-package'></i>
+                            <div>
+                                <span class="option-title">Доставка</span>
+                                <span class="option-desc">Завтра — 249 ₽</span>
+                            </div>
+                        </div>
+                        <div class="delivery-option">
+                            <i class='bx bx-store'></i>
+                            <div>
+                                <span class="option-title">Самовывоз</span>
+                                <span class="option-desc">Завтра — бесплатно</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="share">
+                        <span>Поделиться:</span>
+                        <a href="#"><img src="./img/WK.png" alt=""></a></a>
+                        <a href="#"><img src="./img/TG.png" alt=""></a>
+                        <a href="#"><img src="./img/YouTube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Описание</button>
+                    <button class="tab-btn" data-tab="specs">Характеристики</button>
+                    <button class="tab-btn" data-tab="reviews">Отзывы (2)</button>
+                </div>
+
+                <div class="tab-content active" id="description">
+                    <h2>О книге "Ночной гость"</h2>
+                    <p>Триллер от автора бестселлеров New York Times Хизер Гуденкауф.</p>
+                    <p>Когда в маленьком городке появляется загадочный незнакомец, жизнь местных жителей переворачивается с ног на голову. Кто он и что ему нужно? Почему он появляется только ночью? И почему те, кто встречается с ним, исчезают без следа?</p>
+                    <p>Молли Кендалл, библиотекарь и мать-одиночка, случайно становится свидетельницей одного из таких исчезновений. Теперь она должна разгадать тайну ночного гостя, прежде чем он придет за ней...</p>
+                    <p>Напряженный сюжет, неожиданные повороты и атмосфера постоянной угрозы не дадут вам оторваться от книги до самой последней страницы.</p>
+                </div>
+
+                <div class="tab-content" id="specs">
+                    <table class="specs-table">
+                        <tr>
+                            <td>Автор</td>
+                            <td>Хизер Гуденкауф</td>
+                        </tr>
+                        <tr>
+                            <td>Издательство</td>
+                            <td>Эксмо</td>
+                        </tr>
+                        <tr>
+                            <td>Год издания</td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td>Страниц</td>
+                            <td>352</td>
+                        </tr>
+                        <tr>
+                            <td>Переплет</td>
+                            <td>Твердый</td>
+                        </tr>
+                        <tr>
+                            <td>Формат</td>
+                            <td>130x200 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Вес</td>
+                            <td>450 г</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN</td>
+                            <td>978-5-04-168456-7</td>
+                        </tr>
+                        <tr>
+                            <td>Возрастные ограничения</td>
+                            <td>16+</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="review-author">Анна К.</div>
+                            <div class="review-date">15.04.2023</div>
+                            <div class="review-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>Не могла оторваться! Начала читать вечером и закончила под утро. Очень атмосферный триллер с неожиданной развязкой. Персонажи прописаны так хорошо, что кажется, будто ты их знаешь лично. Обязательно прочту другие книги этого автора.</p>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="review-author">Дмитрий С.</div>
+                            <div class="review-date">02.03.2023</div>
+                            <div class="review-rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>Интересный сюжет, но некоторые моменты показались предсказуемыми. Тем не менее, читается на одном дыхании. Особенно понравилось описание городка и его жителей - чувствуется, что автор хорошо проработала атмосферу.</p>
+                        </div>
+                    </div>
+
+                    <div class="add-review-form">
+                        <h3>Оставить отзыв</h3>
+                        <form>
+                            <div class="form-group">
+                                <label>Ваше имя</label>
+                                <input type="text" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label>Ваша оценка</label>
+                                <div class="rating-select">
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Отзыв</label>
+                                <textarea class="form-textarea" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="submit-review">Отправить отзыв</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendations">
+                <h2>С этой книгой часто покупают</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-item">
+                        <img src="./img/Тихий дом.png" alt="Тихий дом">
+                        <div class="rec-title">Тихий дом</div>
+                        <div class="rec-price">689 ₽</div>
+                        <button class="rec-btn">В корзину</button>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="./img/Последний свидетель.png" alt="Последний свидетель">
+                        <div class="rec-title">Последний свидетель</div>
+                        <div class="rec-price">759 ₽</div>
+                        <button class="rec-btn">В корзину</button>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="./img/Исчезнувшая.png" alt="Исчезнувшая">
+                        <div class="rec-title">Исчезнувшая</div>
+                        <div class="rec-price">819 ₽</div>
+                        <button class="rec-btn">В корзину</button>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="./img/Девушка в тумане.png" alt="Девушка в тумане">
+                        <div class="rec-title">Девушка в тумане</div>
+                        <div class="rec-price">649 ₽</div>
+                        <button class="rec-btn">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал (такой же как в каталоге) -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Книжный интернет-магазин "КНИГИ-ВЕЗДЕ"</h3>
+                        <a href="#">«КНИГИ-ВЕЗДЕ» – сеть книжных магазинов, успешно работающих в Москве и других регионах России.</a>
+                        <a href="#">А ещё это – крупный интернет-магазин книг. В нём вы можете заказывать книги в любое время 24 часа в сутки.</a>
+                        <a href="#">На информационном ресурсе применяются рекомендательные технологии.</a>
+                        <div class="social-links">
+                            <a href="#"><img src="./img/WK.png" alt=""></a></a>
+                            <a href="#"><img src="./img/TG.png" alt=""></a>
+                            <a href="#"><img src="./img/YouTube.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В наших магазинах</h3>
+                        <a href="#">Адреса магазинов</a>
+                        <a href="#">Услуги</a>
+                        <a href="#">Наши партнёры</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Для бизнеса</a>
+                        <a href="#">Хотите у нас работать?</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>В интернет-магазине</h3>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Бонусная программа</a>
+                        <a href="#">Вопросы и ответы</a>
+                        <a href="#">Обратная связь</a>
+                        <a href="#">Акции</a>
+                        <a href="#">Книжный дозор</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <a href="#">8 (495) 424-84-44</a>
+                        <a href="#">info@cnigi-vezde.ru</a>
+                        <a href="#">Россия, Москва</a>
+                        <h3 style="margin-top: 20px;">Мы принимаем</h3>
+                        <div class="payment-methods">
+                            <img src="./img/visa.png" alt="">
+                            <img src="./img/mastercard.png" alt="">
+                            <img src="./img/paypal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2025 КНИГИ-ВЕЗДЕ. Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Скрипт для переключения табов
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                // Удаляем active у всех кнопок и контента
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Добавляем active к текущей кнопке и контенту
+                this.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Скрипт для изменения количества товара
+        document.querySelector('.qty-btn.plus').addEventListener('click', function() {
+            const input = document.querySelector('.qty-input');
+            input.value = parseInt(input.value) + 1;
+        });
+
+        document.querySelector('.qty-btn.minus').addEventListener('click', function() {
+            const input = document.querySelector('.qty-input');
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        });
+
+        // Скрипт для выбора рейтинга в отзывах
+        const stars = document.querySelectorAll('.rating-select i');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', function() {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('bx-star');
+                        s.classList.add('bxs-star');
+                    } else {
+                        s.classList.remove('bxs-star');
+                        s.classList.add('bx-star');
+                    }
+                });
+            });
+        });
+
+        // Скрипт для переключения миниатюр
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.main-image img');
+                const thumbImg = this.querySelector('img');
+                mainImg.src = thumbImg.src;
+                
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
